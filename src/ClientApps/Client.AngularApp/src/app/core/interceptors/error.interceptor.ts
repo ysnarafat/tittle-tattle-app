@@ -8,7 +8,7 @@ import {
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class Error.InterceptorInterceptor implements HttpInterceptor {
+export class ErrorInterceptor implements HttpInterceptor {
 
   constructor() {}
 

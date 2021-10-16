@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Token.ServiceService } from './token.service.service';
+import { UserRoleService } from './user-role.service';
 
-describe('Token.ServiceService', () => {
-  let service: Token.ServiceService;
+describe('UserRoleService', () => {
+  let service: UserRoleService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(Token.ServiceService);
+    service = TestBed.inject(UserRoleService);
   });
 
   it('should be created', () => {
