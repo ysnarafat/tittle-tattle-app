@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./public.component.css']
 })
 export class PublicComponent implements OnInit {
-
+  title = 'client';
+  username: string = '';
+  password: string = '';
+  
   constructor() { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit() {
+    }
+  
+    login() : void {
+      if(this.username == 'admin' && this.password == 'admin'){
+       console.log(this.username);
+      }else {
+        alert("Invalid credentials");
+      }
+    }
 
 }

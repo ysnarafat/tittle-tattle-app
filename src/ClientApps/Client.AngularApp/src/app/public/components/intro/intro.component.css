@@ -1,0 +1,10 @@
+.welcome
+{
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 500;
+    color: #2f4f4f;
+    /* animation: example 4s timing-function delay iteration-count ease-in step-start; */
+}
+
