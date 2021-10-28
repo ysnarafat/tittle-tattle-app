@@ -1,0 +1,12 @@
+{
+    "host" : "mqtt://23.97.61.172",
+    "options" : {
+      "rejectUnauthorized" : false,
+      "port" : 8883,
+      "clientId" : "DataProcessor_DEBUG",
+      "username" : "DataProcessor_DEBUG",
+      "password" : "12345678",
+      "protocol" : "mqtts"
+    }
+  }
+  
