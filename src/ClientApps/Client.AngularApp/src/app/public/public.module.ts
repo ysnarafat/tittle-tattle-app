@@ -11,12 +11,14 @@ import { LoginComponent } from './components/login/login.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { IntroComponent } from './components/intro/intro.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
     PublicComponent,
     LoginComponent,
-    IntroComponent
+    IntroComponent,
+    SignupComponent
   ],
   imports: [
     CommonModule,
