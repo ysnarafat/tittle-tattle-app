@@ -44,6 +44,15 @@ class MqttService {
     });
   };
 
+  Disconnect = () => {
+    return new Promise((resolve, reject) => {
+      this._client.end(true, {}, () => {
+        console.log("MQTT connection disconnected");
+        resolve();
+      });
+    });
+  };
+
   Reconnect = () => {
     return new Promise((resolve, reject) => {
       this._client.on("close", () => {
@@ -51,15 +60,6 @@ class MqttService {
           this._client.reconnect(this.host, this.options);
           resolve();
         }
-      });
-    });
-  };
-
-  Disconnect = () => {
-    return new Promise((resolve, reject) => {
-      this._client.end(true, {}, () => {
-        console.log("MQTT connection disconnected");
-        resolve();
       });
     });
   };
